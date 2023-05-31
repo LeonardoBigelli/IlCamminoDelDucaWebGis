@@ -1,0 +1,11 @@
+tasks:
+  - name: WebGIS
+    init: npm install
+    command: npm start
+
+ports:
+  - name: WebGIS
+    description: Porta del WebGIS.
+    port: 5173
+    onOpen: open-browser
+    visibility: public
