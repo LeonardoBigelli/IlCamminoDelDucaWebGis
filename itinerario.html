@@ -12,10 +12,7 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <!--WebGIS-->
-    <script src="https://cdn.jsdelivr.net/npm/ol@v7.3.0/dist/ol.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@v7.3.0/ol.css">
     <script type="module" src="./webgis/main.js"></script>
-
     </head>
 <body>
     <!-- Navbar -->
@@ -37,9 +34,9 @@
                 <input type="checkbox" id="btn-1">
                 <!-- Sottoelenco 1 -->
                 <ul>
-                    <li><a href="itinerario.html">Itinerario (WebGIS) (sei qui)</a></li>
-                    <li><a href="tratte.html">Tratte (GPX) </a></li>
                     <li><a href="preparati_al_percorso.html">Preparati al percorso</a></li>
+                    <li><a href="itinerario.html">Itinerario (WebGIS)</a></li>
+                    <li><a href="tratte.html">Tratte (GPX) </a></li>
                     <li><a href="segnaletica.html">Segnaletica</a></li>
                     <li><a href="credenziale.html">Credenziale</a></li>
                 </ul>
@@ -129,7 +126,7 @@
         </ul>
     </nav>
     <div style="font-size: xx-large; text-align: center;font-family: 'Wix Madefor Display', sans-serif;">
-        <p> Itinerario in WebGIS. </p>
+        <p> Mappa </p>
     </div>
 
     <div class="map-container">
@@ -178,8 +175,11 @@
             <h4 id="poi-name"></h4>
             <br><hr><br>
             <div id="poi-type"></div>
+            <div id="poi-address">
+                <a id="poi-address-element" href="" target="_blank" rel="noopener noreferrer"></a>
+            </div>
             <div id="poi-site">
-                <a id="poi-site-element" href="">Sito web</a>
+                <a id="poi-site-element" href="" target="_blank" rel="noopener noreferrer">Sito web</a>
             </div>
             <div id="poi-phone">
                 Telefono: <a id="poi-phone-element" href=""></a>
