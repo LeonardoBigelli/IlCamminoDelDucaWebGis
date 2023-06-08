@@ -2,7 +2,7 @@
   "name": "webgis",
   "version": "1.0.0",
   "scripts": {
-    "start": "vite --host",
+    "start": "vite --host --port 80 -l info",
     "build": "vite build",
     "serve": "vite preview"
   },
@@ -10,7 +10,7 @@
     "vite": "^4.0.4"
   },
   "dependencies": {
-    "bootstrap": "^5.2.3",
+    "@vitejs/plugin-basic-ssl": "^1.0.1",
     "ol": "latest"
   }
 }
